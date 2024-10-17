@@ -1,0 +1,86 @@
+body{
+    margin:0;
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    max-width: 910;
+}
+.cards-container{
+    color:white;
+    margin:1.5rem;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+.card a{
+    border:2px solid white;
+    padding:1em 2em;
+    border-radius: 2em;
+    display: inline-block;
+    margin-top: 2rem;
+    /* align-self:flex-start ; */
+    margin-right: auto;
+}
+.card{
+    padding: 3rem;
+    display:flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+.card img{
+    width:64px;
+    height: 40px;
+}
+.card h2{
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700px;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+.card p{
+    font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  opacity: 0.7;
+  margin-bottom: 2.5rem;
+  line-height:1.75;
+}
+a{
+    font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  text-decoration: none;
+  color:inherit;
+
+
+}
+.orange-card{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.green-card{
+    background-color: hsl(184, 100%, 22%);
+}
+.dark-green-card{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+
+}
+@media(max-width:850){
+    .cards-container{
+        flex-direction:column ;
+    }
+    .card{
+        width:unset;
+        width: auto;
+}
+}
